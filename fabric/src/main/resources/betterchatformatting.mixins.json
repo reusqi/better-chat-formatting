@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "com.betterchatformatting.fabric.mixin",
+	"minVersion": "0.8",
+	"client": [
+		"ChatComponentMixin",
+		"ChatScreenMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

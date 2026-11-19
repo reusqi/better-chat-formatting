@@ -1,0 +1,18 @@
+pluginManagement {
+	repositories {
+		maven {
+			name = 'Fabric'
+			url = 'https://maven.fabricmc.net/'
+		}
+		mavenCentral()
+		gradlePluginPortal()
+	}
+}
+
+rootProject.name = 'betterchatformatting'
+
+// common  : Minecraft-free logic (parser, themes, config model...). Unit tested with plain JUnit.
+// fabric  : Fabric loader glue + rendering. Compiles the common sources into the mod jar.
+// neoforge: added in stage 5.
+include 'common'
+include 'fabric'

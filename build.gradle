@@ -1,0 +1,6 @@
+// Root project: intentionally empty. Each module (common, fabric) has its own build script.
+// Shared coordinates live in gradle.properties.
+allprojects {
+	group = project.maven_group
+	version = project.mod_version
+}

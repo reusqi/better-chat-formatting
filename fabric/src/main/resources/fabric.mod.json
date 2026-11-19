@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "betterchatformatting",
+	"version": "${version}",
+	"name": "Better Chat Formatting",
+	"description": "Client-side chat restyling: themes, colored names, highlights, markdown, clickable links and more. Works on any server.",
+	"authors": [
+		"Reusqi"
+	],
+	"license": "MIT",
+	"icon": "assets/betterchatformatting/icon.png",
+	"environment": "client",
+	"mixins": [
+		"betterchatformatting.mixins.json"
+	],
+	"entrypoints": {
+		"client": [
+			"com.betterchatformatting.fabric.BetterChatFormattingClient"
+		],
+		"modmenu": [
+			"com.betterchatformatting.fabric.config.ModMenuIntegration"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"modmenu": "*"
+	}
+}
